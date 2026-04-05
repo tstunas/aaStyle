@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Saitamaar";
+  src:
+    url("/font/Saitamaar.woff2") format("woff2"),
+    url("/font/Saitamaar.woff") format("woff"),
+    url("/font/Saitamaar.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Saitamaar";
+  src:
+    url("/font/NanumGothicCoding.woff2") format("woff2"),
+    url("/font/NanumGothicCoding.woff") format("woff"),
+    url("/font/NanumGothicCoding.ttf") format("truetype");
+  font-display: swap;
+  unicode-range: U+AC00-D7A3, U+3130-318F;
+}
+
+@keyframes vib-anim-1 {
+  0% {
+    transform: skewX(-15deg);
+  }
+
+  5% {
+    transform: skewX(15deg);
+  }
+
+  10% {
+    transform: skewX(-15deg);
+  }
+
+  15% {
+    transform: skewX(15deg);
+  }
+
+  20% {
+    transform: skewX(0);
+  }
+
+  to {
+    transform: skewX(0);
+  }
+}
+
+@keyframes beat-anim-1 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+.content {
+  display: block;
+  font-family: Saitamaar, "Nanum Gothic Coding", ui-monospace, "Noto Sans KR", monospace !important;
+  word-break: break-all;
+  line-height: normal !important;
+  margin-top: 2px;
+  letter-spacing: normal !important;
+  margin-left: 10px;
+  color: #0f172a;
+}
+
+.content .vib-1 {
+  animation: vib-anim-1 0.8s infinite alternate;
+  display: inline-block;
+}
+
+.content .beat-1 {
+  animation: beat-anim-1 0.8s infinite alternate;
+  display: inline-block;
+}
+
+.content .sub {
+  vertical-align: bottom;
+  font-size: 50%;
+  line-height: inherit;
+}
+
+.content .youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  overflow: hidden;
+}
+
+.content .youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content .youtube-wrap {
+  width: 100%;
+  max-width: 600px;
+}
+
+.content .dice {
+  font-weight: 700;
+  color: red;
+}
+
+.content .dice:hover {
+  color: blue;
+}
+
+.content b {
+  font-weight: 700;
+}
+
+.content b:hover {
+  color: blue;
+}
+
+.content .inner-line {
+  line-height: 1.5em !important;
+}
+
+.content .aa {
+  background-color: #fff;
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-left: 0;
+  line-height: 1.1em;
+}
+
+.content.aa {
+  margin-left: 0;
+  overflow-y: hidden;
+  background-color: #fff;
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+  overflow-x: auto;
+  line-height: 1.125em !important;
+  font-family: Saitamaar, sans-serif !important;
+}
+
+.content.novel {
+  background-color: #e3efee;
+  font-family: Dotum, Baekmuk Dotum, Undotum, Apple Gothic, "Noto Sans KR", sans-serif !important;
+  line-height: 1.8em !important;
+  font-size: 1.1em;
+}
+
+.content.line {
+  line-height: 1.5em !important;
+}
+
+.content .content-inline-image {
+  display: block;
+  max-width: min(100%, 300px);
+  height: auto;
+  margin: 8px 0;
+  border-radius: 8px;
+}
+
+.content .content-inline-image-placeholder {
+  display: inline-flex;
+  align-items: center;
+  margin: 4px 0;
+  padding: 2px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.content .content-link-like {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.external-post-content:not(.aa) {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
