@@ -19,17 +19,6 @@
   to { transform: scale(1); }
 }
 
-
-@font-face {
-  font-family: "Saitamaar";
-  src:
-    url("/font/NanumGothicCoding.woff2") format("woff2"),
-    url("/font/NanumGothicCoding.woff") format("woff"),
-    url("/font/NanumGothicCoding.ttf") format("truetype");
-  font-display: swap;
-  unicode-range: U+AC00-D7A3, U+3130-318F;
-}
-
 @keyframes vib-anim-1 {
   0% {
     transform: skewX(-15deg);
