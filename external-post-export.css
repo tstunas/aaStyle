@@ -23,15 +23,6 @@
 @font-face {
   font-family: "Saitamaar";
   src:
-    url("/font/Saitamaar.woff2") format("woff2"),
-    url("/font/Saitamaar.woff") format("woff"),
-    url("/font/Saitamaar.ttf") format("truetype");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Saitamaar";
-  src:
     url("/font/NanumGothicCoding.woff2") format("woff2"),
     url("/font/NanumGothicCoding.woff") format("woff"),
     url("/font/NanumGothicCoding.ttf") format("truetype");
