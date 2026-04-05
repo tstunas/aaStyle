@@ -1,4 +1,26 @@
 @font-face {
+  font-family: 'Saitamaar';
+  src: url('https://da1eth.github.io/AA/HeadKasen.woff2') format('woff2'), url('https://da1eth.github.io/AA/HeadKasen.ttf') format('truetype');
+  font-display: swap;
+}
+
+@keyframes vib-anim-1 {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0); }
+  to { transform: skewX(0); }
+}
+
+@keyframes beat-anim-1 {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  to { transform: scale(1); }
+}
+
+
+@font-face {
   font-family: "Saitamaar";
   src:
     url("/font/Saitamaar.woff2") format("woff2"),
